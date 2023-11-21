@@ -1,0 +1,153 @@
+.about {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 33);
+}
+
+.about h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    padding-top: 80px;
+}
+
+.about h3 {
+    text-align: center;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.infoContainer>div {
+    width: 35%;
+}
+
+.info {
+    width: 50%;
+    font-size: 1.3rem;
+    margin: 70px 0;
+    color: rgba(255, 255, 255, 0.592);
+}
+
+.picture img {
+    /* width: 80%; */
+    filter: drop-shadow(10px 10px 10px rgb(76, 68, 68));
+    width: 450px;
+    border-radius: 500%;
+    justify-self: center;
+    align-items: center;
+    margin-top: 70px;
+    opacity: 0.8;
+}
+
+.extras {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras h5 {
+    font-weight: bold;
+    color: white;
+}
+
+.extras div {
+    margin: 10px;
+    text-align: center;
+}
+
+.ext {
+    margin: 30px 0px;
+}
+
+.ext a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: rgb(17, 22, 108);
+    border: none;
+    font-size: 15px;
+}
+
+.ext a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+
+@media (max-width:1000px) {
+    .picture img {
+        width: 350px;
+    }
+
+    .info {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:730px) {
+    .picture img {
+        width: 250px;
+    }
+}
+
+@media (max-width:57px) {
+    .picture img {
+        width: 200px;
+    }
+}
+
+@media (max-width:540px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .picture img {
+        width: 200px;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .info {
+        font-size: 0.8rem;
+    }
+
+    #cv {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width:710px) {
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:430px) {
+    #cv {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width:730px) {
+    .about {
+        margin-top: 300px;
+    }
+}
